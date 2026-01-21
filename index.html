@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muscu Pro</title>
+
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta name="theme-color" content="#020617">
+</head>
+
+<body>
+<header class="hero">
+  <h1>Muscu<span>Pro</span></h1>
+  <p>Track • Progress • Dominate</p>
+</header>
+
+<main class="container">
+
+  <section class="card">
+    <h2>Nouvelle série</h2>
+    <input type="date" id="date">
+    <input type="text" id="exercise" placeholder="Exercice">
+    <input type="number" id="weight" placeholder="Charge (kg)">
+    <input type="number" id="reps" placeholder="Répétitions">
+    <button onclick="addWorkout()">
+      <i class="fa-solid fa-plus"></i> Ajouter
+    </button>
+  </section>
+
+  <section class="stats">
+    <div class="stat">
+      <h3 id="totalWorkouts">0</h3>
+      <p>Séries</p>
+    </div>
+    <div class="stat">
+      <h3 id="totalWeight">0</h3>
+      <p>Kg soulevés</p>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Historique</h2>
+    <ul id="workout-list"></ul>
+  </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
